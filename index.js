@@ -4,6 +4,7 @@ let tableContainer = document.querySelector("#result_table");
 let resContainer = document.querySelector("#res");
 
 const handleClick = () => {
+  totalWaterCaptured = 0;
   const str = document.querySelector("#input").value;
   let arr = str.trim().split(",").map(Number);
   maxHeight = Math.max(...arr);
