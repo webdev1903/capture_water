@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Water Tank</title>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h1>Provide height of blocks</h1>
+        <label for="input">Input:</label>
+        <input
+          name="input"
+          type="text"
+          placeholder="0,4,0,0,0,6,0,6,4,0"
+          id="input"
+          onChange="handleChange()"
+        />
+        <button onClick="handleClick()">Calculate Water Captured</button>
+      </div>
+      <div id="result_table"></div>
+      <div id="res"></div>
+    </div>
+  </body>
+</html>
+<script src="./index.js"></script>
